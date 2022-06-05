@@ -65,7 +65,7 @@ html {
 body {
   min-height: 100vh;
   color: #333333;
-  background-image: url(""svg.png);
+  background-image: url("svg.png");
   letter-spacing: 0.05rem;
 }
 
