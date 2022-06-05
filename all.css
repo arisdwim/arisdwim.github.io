@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&family=Noto+Sans+TC&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  color: #333333;
+  background-image: linear-gradient(174deg, #2ec9f0 2%, #2ec9f0 46%, #fff 46%, #fff 100%, #e8e8e8 100%);
+  letter-spacing: 0.05rem;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 48px 12px 0;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-top: 1.5rem;
+  }
+}
+
+.title {
+  font-family: "Baloo Tamma 2", cursive;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.card {
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.card-list {
+  display: none;
+}
+
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 12px 4px 20px;
+}
+
+.inputText {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.inputText::-webkit-input-placeholder {
+  color: #9f9a91;
+}
+
+.inputText:-ms-input-placeholder {
+  color: #9f9a91;
+}
+
+.inputText::-ms-input-placeholder {
+  color: #9f9a91;
+}
+
+.inputText::placeholder {
+  color: #9f9a91;
+}
+
+.addBtn {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background: #e04580;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addBtn:hover {
+  background: #9f9a91;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: #9f9a91;
+}
+
+.main li {
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 2px solid #efefef;
+  cursor: pointer;
+}
+
+.main li:hover {
+  color: #333333;
+  border-color: rgba(51, 51, 51, 0.3);
+}
+
+.main li.active {
+  color: #333333;
+  border-color: #333333;
+  font-weight: bold;
+}
+
+.card-content {
+  padding: 10px 16px 10px 20px;
+}
+
+@media (max-width: 767px) {
+  .card-content {
+    padding: 8px 10px 8px 16px;
+  }
+}
+
+.list li {
+  position: relative;
+  padding-right: 2rem;
+}
+
+.list li:hover .deleteBtn {
+  opacity: 1;
+}
+
+.list li .deleteBtn {
+  position: absolute;
+  color: #333333;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+}
+
+.list li .deleteBtn:hover {
+  color: red;
+}
+
+.checkBox {
+  position: relative;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.checkBox input {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkBox input:checked ~ p {
+  color: #9f9a91;
+  text-decoration: line-through;
+}
+
+.checkBox input:checked ~ p::before {
+  opacity: 0;
+}
+
+.checkBox input:checked ~ p::after {
+  opacity: 1;
+}
+
+.checkBox p {
+  padding: 1rem 0;
+  border-bottom: 1px solid #efefef;
+}
+
+.checkBox p::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  left: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  pointer-events: none;
+}
+
+.checkBox p::after {
+  content: "";
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-right: 3px solid #ffd370;
+  border-bottom: 3px solid #ffd370;
+  height: 15px;
+  width: 8px;
+  left: 22px;
+  top: 14px;
+  opacity: 0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  pointer-events: none;
+}
+
+.list-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 16px;
+  font-size: 14px;
+}
+
+.list-footer .clear-item {
+  color: #9f9a91;
+  text-decoration: none;
+  display: block;
+}
+
+.list-footer .clear-item:hover {
+  color: red;
+}
+/*# sourceMappingURL=all.css.map */

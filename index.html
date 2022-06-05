@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.css">
+  <title>TODO LIST</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">TODO LIST</h1>
+    <div class="card input">
+      <input type="text" class="inputText" placeholder="Please enter a to-do">
+      <a href="#" class="addBtn">+</a>
+    </div>
+    <div class="card card-list">
+      <ul class="main">
+        <li data-toggle="all">All</li>
+        <li data-toggle="work">To be Completed</li>
+        <li data-toggle="done">Completed</li>
+      </ul>
+      <div class="card-content">
+        <ul class="list"></ul>
+        <div class="list-footer">
+          <p><span class="workNum">0</span> Pending Project</p>
+          <a href="#" class="clear-item">Clear Completed Items</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/all.js"></script>
+</body>
+
+</html>
