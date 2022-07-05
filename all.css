@@ -65,7 +65,7 @@ html {
 body {
   min-height: 100vh;
   color: #333333;
-  background-image: url("/img/svg.png");
+  background-image: url("svg.png");
   letter-spacing: 0.05rem;
   background-repeat: no-repeat;
   background-size: 2000px 750px;
